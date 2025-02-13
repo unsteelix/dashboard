@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="src/font/BungeeShade-Regular.ttf">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://umami.unsteelix.cloud/script.js" data-website-id="97fccace-c12f-4dc0-a896-d58e50a26a94"></script>
+    <link rel="manifest" href="/manifest.json">
+    <script defer>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.log('Service Worker registration failed:', error);
+          });
+      }
+    </script>
+</head>
+<body>
+    <div class="wrap hidden">
+      <header>
+        <h1>Welcome space cowboy</h1>
+      </header>
+      <main>
+        <div id="links">Loading...</div>
+        <div class="switchBtn" onclick="switchToOther()">Other</div>
+      </main>
+      <footer>
+        <p>&copy; 2025 Unsteelix CUMpany</p>
+        <div onclick="switchVersion()" class="btn">Switch</div>
+      </footer>
+    </div>
+    <script defer>
+      const openPassPopup = () => {
+        const pass = Number(window.prompt(""));
+        if (pass !== 1234) {
+          openPassPopup()
+        } else {
+          document.querySelector('.wrap').classList.remove('hidden')
+        }
+      }
+      openPassPopup()
+    </script>
+    <script src="/src/js/links.js"></script>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>
