@@ -33,6 +33,16 @@ const main_services = [
       name: 'News',
       url: 'https://rss.unsteelix.cloud',
       url_local: 'http://rss.home'
+    },
+    {
+      name: 'PLEX',
+      url: 'https://plex.unsteelix.cloud',
+      url_local: 'http://plex.home'
+    },
+    {
+      name: 'Immich',
+      url: 'https://immich.unsteelix.cloud',
+      url_local: 'http://immich.home'
     }
   ]
   
@@ -76,5 +86,35 @@ const main_services = [
       name: 'Umami',
       url: 'https://umami.unsteelix.cloud',
       url_local: 'http://umami.home'
+    },
+    {
+      name: 'Draw.io',
+      url: '',
+      url_local: ''
+    },
+    {
+      name: 'IT Tools',
+      url: '',
+      url_local: 'http://tools.home'
+    },
+    {
+      name: 'ByteStash',
+      url: '',
+      url_local: 'http://byte.home'
+    },
+    {
+      name: 'Sonarr',
+      url: '',
+      url_local: 'http://sonarr.home'
+    },
+    {
+      name: 'Lidarr',
+      url: '',
+      url_local: 'http://lidarr.home'
+    },
+    {
+      name: 'Navidrome',
+      url: '',
+      url_local: ''
     }
   ]
